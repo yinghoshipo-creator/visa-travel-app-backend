@@ -1,46 +1,96 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 5001;
+// 1. 引入 cors
+const cors = require('cors'); 
 
-// 1. 載入新的 visa.json 檔案 (在新結構下)
-const fullVisaData = require('./visa.json');
+// 2. 在所有路由定義之前使用 cors
+// 這將允許所有來源 (origin) 存取您的 API
+app.use(cors());
 
-// 提取所有國家/地區的扁平化列表 (在應用程式啟動時只執行一次)
-const allVisas = [
-    ...fullVisaData.data.visa_free,
-    ...fullVisaData.data.visa_on_arrival,
-    ...fullVisaData.data.e_visa
-];
+let fullVisaData = {};
+let allVisas = [];
+let availableRegions = [];
 
-// 2. 處理簽證資訊的 API 端點
-// 範例 URL: /api/visas?region=亞太地區
-app.get('/api/visas', (req, res) => {
-    // 從查詢參數中取得 region (洲別)
-    const filterRegion = req.query.region;
+try {
+    // 1. 嘗試載入新的 visa.json 檔案
+    fullVisaData = require('./visa.json');
+
+    // 2. 嘗試處理資料 (如果 visa.json 結構不對，這裡會拋出 TypeError)
+    allVisas = [
+        // 確保 fullVisaData.data 存在
+        ...(fullVisaData.data?.visa_free || []),
+        ...(fullVisaData.data?.visa_on_arrival || []),
+        ...(fullVisaData.data?.e_visa || [])
+    ];
     
+    if (allVisas.length === 0) {
+        throw new Error("visa.json 結構錯誤或資料為空，請檢查 'data' 物件內的三個簽證陣列。");
+    }
+
+    // 3. 提取所有不重複的洲別清單
+    availableRegions = [...new Set(allVisas.map(country => country.region))];
+
+    console.log(`✅ 簽證資料載入成功！總計國家數: ${allVisas.length}`);
+    console.log(`✅ 偵測到地區數: ${availableRegions.length}`);
+    
+} catch (error) {
+    console.error("==================================================");
+    console.error("❌ 嚴重錯誤：無法載入或處理 visa.json 檔案！");
+    console.error("請檢查以下兩點：");
+    console.error("1. 檔案路徑是否正確 (./visa.json)");
+    console.error("2. **visa.json 檔案的 JSON 格式是否有誤或結構不符** (這是最常見的問題)");
+    console.error("詳細錯誤訊息:", error.message);
+    console.error("==================================================");
+}
+
+
+// --- API 路由定義區 ---
+
+// 處理所有簽證資訊的 API 端點
+app.get('/api/visas', (req, res) => {
+    // 如果資料載入失敗，我們回傳空陣列
+    if (allVisas.length === 0) {
+        return res.status(500).json({ error: "Server data failed to load from visa.json" });
+    }
+    
+    const filterRegion = req.query.region;
     let filteredVisas = allVisas;
 
     if (filterRegion) {
-        // 如果有 region 參數，則進行篩選
         filteredVisas = allVisas.filter(country => 
             country.region === filterRegion
         );
     }
     
-    // 3. 回傳篩選後的結果（如果沒有參數，則回傳全部）
     res.json(filteredVisas);
 });
+
+// 回傳所有國家/地區列表的 API
+app.get('/api/countries', (req, res) => {
+    if (allVisas.length === 0) {
+        return res.status(500).json({ error: "Server data failed to load from visa.json" });
+    }
+    
+    const countryList = allVisas.map(country => ({
+        name_zh: country.name_zh,
+        name_en: country.name_en,
+        region: country.region
+    }));
+    
+    res.json(countryList);
+});
+
+// 回傳所有地區列表的 API (用於下拉式選單)
+app.get('/api/regions', (req, res) => {
+    if (availableRegions.length === 0) {
+        return res.status(500).json({ error: "Server data failed to load from visa.json" });
+    }
+    res.json(availableRegions);
+});
+
 
 // 啟動伺服器
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
-});
-// ... (延續上面的程式碼) ...
-
-// 提取所有不重複的洲別清單
-const availableRegions = [...new Set(allVisas.map(country => country.region))];
-
-app.get('/api/regions', (req, res) => {
-    // 範例回傳: ["亞太地區", "亞西地區", "美洲地區", "歐洲地區 (申根區)", ...]
-    res.json(availableRegions);
 });
