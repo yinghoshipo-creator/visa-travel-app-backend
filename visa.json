@@ -1,52 +1,1327 @@
-[
-  {
-    "code":"JP",
-    "name":"Japan",
-    "visa_requirement":"visa-free",
-    "stay_days":"90 days",
-    "process":"憑護照入境（90天內免簽）",
-    "documents":"護照（有效期至少六個月）",
-    "fee":"0",
-    "official_link":"https://www.mofa.go.jp"
-  },
-  {
-    "code":"TW",
-    "name":"Taiwan",
-    "visa_requirement":"visa-free",
-    "stay_days":"90 days",
-    "process":"憑護照或相關入境許可",
-    "documents":"護照",
-    "fee":"0",
-    "official_link":"https://www.boca.gov.tw"
-  },
-  {
-    "code":"US",
-    "name":"United States",
-    "visa_requirement":"visa required (ESTA for some)",
-    "stay_days":"Varies; ESTA: 90 days",
-    "process":"線上填寫申請或前往領事館申辦簽證",
-    "documents":"護照、照片、財力證明視情況",
-    "fee":"ESTA: $21（示範）",
-    "official_link":"https://travel.state.gov"
-  },
-  {
-    "code":"CN",
-    "name":"China",
-    "visa_requirement":"visa required",
-    "stay_days":"Varies",
-    "process":"向中國大使館/領事館申辦簽證",
-    "documents":"護照、照片、簽證表格、邀請函視情況",
-    "fee":"依類別而定",
-    "official_link":"http://cs.mfa.gov.cn"
-  },
-  {
-    "code":"GB",
-    "name":"United Kingdom",
-    "visa_requirement":"visa-free (部分國家) / eVisa",
-    "stay_days":"180 days depending",
-    "process":"線上或使館申請",
-    "documents":"護照",
-    "fee":"varies",
-    "official_link":"https://www.gov.uk/check-uk-visa"
+{
+  "update_date": "2025.11.19",
+  "data": {
+    "visa_free": [
+      {
+        "region": "亞太地區",
+        "name_en": "Brunei",
+        "name_zh": "汶萊",
+        "stay_days": "14天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Cook Islands",
+        "name_zh": "庫克群島",
+        "stay_days": "31天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Fiji",
+        "name_zh": "斐濟",
+        "stay_days": "120天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Guam",
+        "name_zh": "關島",
+        "stay_days": "45/90天",
+        "notes": "有注意事項，請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Japan",
+        "name_zh": "日本",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Republic of Korea",
+        "name_zh": "韓國",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Macao",
+        "name_zh": "澳門",
+        "stay_days": "30天",
+        "notes": "請逕上大陸委員會網站查詢最新資訊"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Malaysia",
+        "name_zh": "馬來西亞",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Marshall Islands",
+        "name_zh": "馬紹爾群島",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Federated States of Micronesia",
+        "name_zh": "密克羅尼西亞聯邦",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "New Zealand",
+        "name_zh": "紐西蘭",
+        "stay_days": "90天",
+        "notes": "須事前線上付費申請「電子旅行授權」(NZeTA)"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Niue",
+        "name_zh": "紐埃",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Northern Mariana Islands (Saipan, Tinian, Rota)",
+        "name_zh": "北馬里安納群島(塞班、天寧及羅塔等島)",
+        "stay_days": "45天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Nouvelle Calédonie",
+        "name_zh": "新喀里多尼亞(法國海外特別行政區)",
+        "stay_days": "90天",
+        "notes": "法國海外屬領地停留日數與歐洲申根區停留日數合併計算"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Palau",
+        "name_zh": "帛琉",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Philippines",
+        "name_zh": "菲律賓",
+        "stay_days": "14天",
+        "notes": "自2025年7月1日起生效"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Polynésie française",
+        "name_zh": "法屬玻里尼西亞(包含大溪地)(法國海外行政區)",
+        "stay_days": "90天",
+        "notes": "法國海外屬領地停留日數與歐洲申根區停留日數合併計算"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Samoa",
+        "name_zh": "薩摩亞",
+        "stay_days": "最多60天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Singapore",
+        "name_zh": "新加坡",
+        "stay_days": "30天",
+        "notes": "30天以上者，應於入境後申請延期"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Thailand",
+        "name_zh": "泰國",
+        "stay_days": "60天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Tuvalu",
+        "name_zh": "吐瓦魯",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Wallis et Futuna",
+        "name_zh": "瓦利斯群島和富圖納群島(法國海外行政區)",
+        "stay_days": "90天",
+        "notes": "法國海外屬領地停留日數與歐洲申根區停留日數合併計算"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Israel",
+        "name_zh": "以色列",
+        "stay_days": "90天",
+        "notes": "自2025年1月起，須事先線上填報申請旅行授權電子許可(ETA-IL)。網址：https://israel-entry.piba.gov.il/"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Anguilla",
+        "name_zh": "安奎拉(英國海外領地)",
+        "stay_days": "1個月",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Antigua and Barbuda",
+        "name_zh": "安地卡及巴布達",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Aruba",
+        "name_zh": "阿魯巴(荷蘭海外自治領地)",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Belize",
+        "name_zh": "貝里斯",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Bermuda",
+        "name_zh": "百慕達(英國海外領地)",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Bonaire",
+        "name_zh": "波奈(荷蘭海外行政區)",
+        "stay_days": "90天",
+        "notes": "波奈、沙巴、聖佑達修斯為一個共同行政區，停留天數合併計算"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "British Virgin Islands",
+        "name_zh": "維京群島(英國海外領地)",
+        "stay_days": "1個月",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Canada",
+        "name_zh": "加拿大",
+        "stay_days": "180天",
+        "notes": "自2016年11月10日起，必須事先上網申請「電子旅行證(eTA)」"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Cayman Islands",
+        "name_zh": "開曼群島(英國海外領地)",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Chile",
+        "name_zh": "智利",
+        "stay_days": "最多90天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Costa Rica",
+        "name_zh": "哥斯大黎加",
+        "stay_days": "30天",
+        "notes": "惟可向移民機關申請至多延長至90天"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Curaçao",
+        "name_zh": "古拉索(荷蘭海外自治領地)",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "The Commonwealth of Dominica",
+        "name_zh": "多米尼克",
+        "stay_days": "至多3個月",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Dominican Republic",
+        "name_zh": "多明尼加",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Falkland Islands",
+        "name_zh": "福克蘭群島(英國海外領地)",
+        "stay_days": "連續24個月期間內至多可獲核累計停留12個月",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Guadeloupe",
+        "name_zh": "瓜地洛普(法國海外省區)",
+        "stay_days": "90天",
+        "notes": "法國海外屬領地停留日數與歐洲申根區停留日數合併計算"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Guatemala",
+        "name_zh": "瓜地馬拉",
+        "stay_days": "30至90天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "la Guyane",
+        "name_zh": "圭亞那(法國海外省區)",
+        "stay_days": "90天",
+        "notes": "法國海外屬領地停留日數與歐洲申根區停留日數合併計算"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Haiti",
+        "name_zh": "海地",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Honduras",
+        "name_zh": "宏都拉斯",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Martinique",
+        "name_zh": "馬丁尼克(法國海外省區)",
+        "stay_days": "90天",
+        "notes": "法國海外屬領地停留日數與歐洲申根區停留日數合併計算"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Montserrat",
+        "name_zh": "蒙哲臘(英國海外領地)",
+        "stay_days": "6個月",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Nicaragua",
+        "name_zh": "尼加拉瓜",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Panama",
+        "name_zh": "巴拿馬",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Paraguay",
+        "name_zh": "巴拉圭",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Peru",
+        "name_zh": "秘魯",
+        "stay_days": "最多90天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Saba",
+        "name_zh": "沙巴(荷蘭海外行政區)",
+        "stay_days": "90天",
+        "notes": "波奈、沙巴、聖佑達修斯為一個共同行政區，停留天數合併計算"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Saint-Barthélemy",
+        "name_zh": "聖巴瑟米(法國海外行政區)",
+        "stay_days": "90天",
+        "notes": "法國海外屬領地停留日數與歐洲申根區停留日數合併計算"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "St. Eustatius",
+        "name_zh": "聖佑達修斯(荷蘭海外行政區)",
+        "stay_days": "90天",
+        "notes": "波奈、沙巴、聖佑達修斯為一個共同行政區，停留天數合併計算"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "St. Kitts and Nevis",
+        "name_zh": "聖克里斯多福及尼維斯",
+        "stay_days": "最長期限90天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "St. Lucia",
+        "name_zh": "聖露西亞",
+        "stay_days": "42天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "St. Maarten",
+        "name_zh": "聖馬丁(荷蘭海外自治領地)",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Saint-Martin",
+        "name_zh": "聖馬丁(法國海外行政區)",
+        "stay_days": "90天",
+        "notes": "法國海外屬領地停留日數與歐洲申根區停留日數合併計算"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Saint-Pierre et Miquelon",
+        "name_zh": "聖皮埃與密克隆群島(法國海外行政區)",
+        "stay_days": "90天",
+        "notes": "法國海外屬領地停留日數與歐洲申根區停留日數合併計算"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "St. Vincent and the Grenadines",
+        "name_zh": "聖文森",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Turks & Caicos",
+        "name_zh": "土克凱可群島(英國海外領地)",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "United States of America",
+        "name_zh": "美國",
+        "stay_days": "90天",
+        "notes": "包括美國本土、夏威夷、阿拉斯加、波多黎克、關島、美屬維京群島及美屬北馬里亞納群島。不包括美屬薩摩亞。停留天數自入境當天起算，須事先上網取得「旅行授權電子系統(ESTA)」授權許可"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Andorra",
+        "name_zh": "安道爾",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Austria",
+        "name_zh": "奧地利",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Belgium",
+        "name_zh": "比利時",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Bulgaria",
+        "name_zh": "保加利亞",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Croatia",
+        "name_zh": "克羅埃西亞",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Czech Republic",
+        "name_zh": "捷克",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Denmark",
+        "name_zh": "丹麥",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Estonia",
+        "name_zh": "愛沙尼亞",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Faroe Islands",
+        "name_zh": "丹麥法羅群島",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Finland",
+        "name_zh": "芬蘭",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "France",
+        "name_zh": "法國",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Germany",
+        "name_zh": "德國",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Greece",
+        "name_zh": "希臘",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Greenland",
+        "name_zh": "丹麥格陵蘭島",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "The Holy See",
+        "name_zh": "教廷",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Hungary",
+        "name_zh": "匈牙利",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Iceland",
+        "name_zh": "冰島",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Italy",
+        "name_zh": "義大利",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Latvia",
+        "name_zh": "拉脫維亞",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Liechtenstein",
+        "name_zh": "列支敦斯登",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Lithuania",
+        "name_zh": "立陶宛",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Luxembourg",
+        "name_zh": "盧森堡",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Malta",
+        "name_zh": "馬爾他",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Monaco",
+        "name_zh": "摩納哥",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "The Netherlands",
+        "name_zh": "荷蘭",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Norway",
+        "name_zh": "挪威",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Poland",
+        "name_zh": "波蘭",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Portugal",
+        "name_zh": "葡萄牙",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Romania",
+        "name_zh": "羅馬尼亞",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "San Marino",
+        "name_zh": "聖馬利諾",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Slovakia",
+        "name_zh": "斯洛伐克",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Slovenia",
+        "name_zh": "斯洛維尼亞",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Spain",
+        "name_zh": "西班牙",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Sweden",
+        "name_zh": "瑞典",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (申根區)",
+        "name_en": "Switzerland",
+        "name_zh": "瑞士",
+        "stay_days": "每180天期間內總計可停留至多90天",
+        "notes": "申根區國家/地區之停留日數合併計算"
+      },
+      {
+        "region": "歐洲地區 (獨立計算)",
+        "name_en": "Albania",
+        "name_zh": "阿爾巴尼亞",
+        "stay_days": "每6個月期間內可停留至多90天",
+        "notes": ""
+      },
+      {
+        "region": "歐洲地區 (獨立計算)",
+        "name_en": "Bosnia and Herzegovina",
+        "name_zh": "波士尼亞與赫塞哥維納",
+        "stay_days": "每6個月期間內可停留至多90天",
+        "notes": ""
+      },
+      {
+        "region": "歐洲地區 (獨立計算)",
+        "name_en": "Cyprus",
+        "name_zh": "賽浦勒斯",
+        "stay_days": "每6個月期間內可停留至多90天",
+        "notes": ""
+      },
+      {
+        "region": "歐洲地區 (獨立計算)",
+        "name_en": "Gibraltar",
+        "name_zh": "直布羅陀(英國海外領地)",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "歐洲地區 (獨立計算)",
+        "name_en": "Ireland",
+        "name_zh": "愛爾蘭",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "歐洲地區 (獨立計算)",
+        "name_en": "Kosovo",
+        "name_zh": "科索沃",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "歐洲地區 (獨立計算)",
+        "name_en": "North Macedonia",
+        "name_zh": "北馬其頓",
+        "stay_days": "每6個月期間內可停留至多90天",
+        "notes": "至2030年3月31日止"
+      },
+      {
+        "region": "歐洲地區 (獨立計算)",
+        "name_en": "Montenegro",
+        "name_zh": "蒙特內哥羅",
+        "stay_days": "每6個月期間內可停留至多90天",
+        "notes": ""
+      },
+      {
+        "region": "歐洲地區 (獨立計算)",
+        "name_en": "U.K.",
+        "name_zh": "英國",
+        "stay_days": "12 個月內停留不超過6個月",
+        "notes": "2025年1月8日起，我國護照持有人須事先至官方網站線上申報「電子旅行憑證」(ETA)。網址：https://www.gov.uk/guidance/apply-for-an-electronic-travel-authorisation-eta"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Gambia",
+        "name_zh": "甘比亞",
+        "stay_days": "由機場移民官視個案核定",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Mayotte",
+        "name_zh": "馬約特島(法國海外省區)",
+        "stay_days": "90天",
+        "notes": "法國海外屬領地停留日數與歐洲申根區停留日數合併計算"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "La Réunion",
+        "name_zh": "留尼旺島(法國海外省區)",
+        "stay_days": "90天",
+        "notes": "法國海外屬領地停留日數與歐洲申根區停留日數合併計算"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Eswatini",
+        "name_zh": "史瓦帝尼",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Zambia",
+        "name_zh": "尚比亞",
+        "stay_days": "一年內最多停留90天",
+        "notes": "無法一次給予全部90天，一次僅給予30天，可至任一尚國移民局辦公室辦理延簽手續"
+      }
+    ],
+    "visa_on_arrival": [
+      {
+        "region": "亞太地區",
+        "name_en": "Bangladesh",
+        "name_zh": "孟加拉",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Cambodia",
+        "name_zh": "柬埔寨",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Indonesia",
+        "name_zh": "印尼",
+        "stay_days": "30天",
+        "notes": "落地簽證30天亦得申請電子落地簽(eVOA)"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Laos",
+        "name_zh": "寮國",
+        "stay_days": "14-30天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Maldives",
+        "name_zh": "馬爾地夫",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Nepal",
+        "name_zh": "尼泊爾",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Sri Lanka",
+        "name_zh": "斯里蘭卡",
+        "stay_days": "可停留至多30天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Timor Leste",
+        "name_zh": "東帝汶",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Vanuatu",
+        "name_zh": "萬那杜",
+        "stay_days": "120天",
+        "notes": ""
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Bahrain",
+        "name_zh": "巴林",
+        "stay_days": "1個月",
+        "notes": "有條件式落地簽，詳情請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Belarus",
+        "name_zh": "白俄羅斯",
+        "stay_days": "需先辦理預審制落地簽",
+        "notes": "詳情請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Iran",
+        "name_zh": "伊朗",
+        "stay_days": "最多90天",
+        "notes": "需先辦理預審制落地簽，詳請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Jordan",
+        "name_zh": "約旦",
+        "stay_days": "30天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Kazakhstan",
+        "name_zh": "哈薩克",
+        "stay_days": "需先辦理預審制落地簽證",
+        "notes": "詳情請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Lebanon",
+        "name_zh": "黎巴嫩",
+        "stay_days": "最多30天",
+        "notes": "需先電郵駐約旦代表處代辦預審制觀光落地簽證，詳情請閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Oman",
+        "name_zh": "阿曼",
+        "stay_days": "30天",
+        "notes": "詳情請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Qatar",
+        "name_zh": "卡達",
+        "stay_days": "30天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Tajikistan",
+        "name_zh": "塔吉克",
+        "stay_days": "最多45天",
+        "notes": "商務落地簽證須出具塔國邀請公司或組織邀請函。詳情請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Uzbekistan",
+        "name_zh": "烏茲別克",
+        "stay_days": "需先辦理預審制落地簽",
+        "notes": "詳情請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Cape Verde",
+        "name_zh": "維德角",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Union of the Comoros",
+        "name_zh": "葛摩聯盟",
+        "stay_days": "最多45天",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Egypt",
+        "name_zh": "埃及",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Gabon",
+        "name_zh": "加彭",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Tanzania",
+        "name_zh": "坦尚尼亞",
+        "stay_days": "最多90天",
+        "notes": "詳請及其他事項，請參考坦尚尼亞移民局官網：www.immigration.go.tz"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Madagascar",
+        "name_zh": "馬達加斯加",
+        "stay_days": "30天",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Mauritius",
+        "name_zh": "模里西斯",
+        "stay_days": "由移民官核給停留天數",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Rwanda",
+        "name_zh": "盧安達",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Seychelles",
+        "name_zh": "塞席爾",
+        "stay_days": "30天",
+        "notes": "塞席爾雖無簽證制度，惟旅客落地後須獲核發「入境許可」始可入境"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "St. Helena",
+        "name_zh": "聖海蓮娜(英國海外領地)",
+        "stay_days": "90天",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Somaliland",
+        "name_zh": "索馬利蘭",
+        "stay_days": "30天",
+        "notes": "須先辦理落地簽證函，詳情請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Liberia",
+        "name_zh": "賴比瑞亞",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": "及賴國移民署建置之申辦落地簽證網站址：https://visaonarrival.lis.gov.lr/"
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Jamaica",
+        "name_zh": "牙買加",
+        "stay_days": "至多30天",
+        "notes": "必須事先向牙買加駐外使館申辦「身分切結書」(Affidavit of Identity)，方能以落地簽方式入境，否則可能遭航空公司拒載"
+      }
+    ],
+    "e_visa": [
+      {
+        "region": "亞太地區",
+        "name_en": "Australia",
+        "name_zh": "澳大利亞",
+        "stay_days": "效期1年，單次在澳停留期限不得逾3個月",
+        "notes": "我國護照(載有國民身分證統一編號)持有人，可透過手機應用程式「AustraliaETA」自行上網申請赴澳簽證"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Bhutan",
+        "name_zh": "不丹",
+        "stay_days": "可停留至多90天",
+        "notes": "申請網頁：https://www.visit.doi.gov.bt"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Cambodia",
+        "name_zh": "柬埔寨",
+        "stay_days": "30天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "India",
+        "name_zh": "印度",
+        "stay_days": "依簽證種類與效期而異",
+        "notes": "須於預定啟程前至少4天上網申請電子簽證。印度政府每年調漲簽證費用，簽證政策亦時有調整情形，相關最新資訊請上印度簽證官方網站或印度台北協會網頁查詢"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Laos",
+        "name_zh": "寮國",
+        "stay_days": "30天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Myanmar",
+        "name_zh": "緬甸",
+        "stay_days": "依簽證種類而異",
+        "notes": "國人因觀光或商務前往緬甸，得憑效期6個月以上之普通護照上網付費申辦電子簽證。網址：http://evisa.moip.gov.mm"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Philippines",
+        "name_zh": "菲律賓",
+        "stay_days": "30天",
+        "notes": "菲國對中華民國國民實施「電子旅遊憑證」(ETA)，國人可於線上申獲該憑證並列印後持憑入境菲國"
+      },
+      {
+        "region": "亞太地區",
+        "name_en": "Vietnam",
+        "name_zh": "越南",
+        "stay_days": "最長90天",
+        "notes": "自2023年8月15日起開放所有國家/地區申請，其中適用對象包含我國。單次入境25美元，多次入境50美元。申請網址：https://evisa.gov.vn/"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Armenia",
+        "name_zh": "亞美尼亞",
+        "stay_days": "21日或120日",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Bahrain",
+        "name_zh": "巴林",
+        "stay_days": "至多90天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Jordan",
+        "name_zh": "約旦",
+        "stay_days": "依簽證種類與效期而異",
+        "notes": "可至約旦電子簽證官網申請。網址：https://eservices.moi.gov.jo/MOI_EVISA/faces/Pages/Runnables/login.jsf"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Kazakhstan",
+        "name_zh": "哈薩克",
+        "stay_days": "至多30天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Mongolia",
+        "name_zh": "蒙古國",
+        "stay_days": "至多30天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Oman",
+        "name_zh": "阿曼",
+        "stay_days": "30天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Qatar",
+        "name_zh": "卡達",
+        "stay_days": "30天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Russia",
+        "name_zh": "俄羅斯",
+        "stay_days": "自入境日起30天",
+        "notes": "自2025年8月23日起，電子簽證效期為簽發日起120天內。相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Saudi Arabia",
+        "name_zh": "沙烏地阿拉伯",
+        "stay_days": "至多90天",
+        "notes": "其他申請資訊詳情請參閱「入境及簽證須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Syria",
+        "name_zh": "敘利亞",
+        "stay_days": "最多15天",
+        "notes": "國人以觀光事由赴敘利亞，得持憑6個月以上效期之中華民國普通護照上網申辦單(多)次入境的電子簽證。網址：https://evisa.sy/signin"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Tajikistan",
+        "name_zh": "塔吉克",
+        "stay_days": "至多60天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Türkiye",
+        "name_zh": "土耳其",
+        "stay_days": "總停留時間最多30天",
+        "notes": "凡我國人因觀光或商務目的欲前往土耳其，得持憑6個月以上效期之中華民國普通護照先行上網申辦半年內多次入境的電子簽證。網址：https://www.evisa.gov.tr/en/"
+      },
+      {
+        "region": "亞西地區",
+        "name_en": "Arab United Emirates",
+        "name_zh": "阿拉伯聯合大公國",
+        "stay_days": "96 小時",
+        "notes": "凡我國人全程皆搭乘阿聯航空並經杜拜轉機超過4小時，可於該航空公司網站申辦過境電子簽證。相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Benin",
+        "name_zh": "貝南",
+        "stay_days": "依申請天數而異",
+        "notes": "簽證價格隨天數及單次或多次入境而異，以簽證效期30天單次入境為例約50歐元。網址：https://evisa.bj/"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Burkina Faso",
+        "name_zh": "布吉納法索",
+        "stay_days": "5天、30-90天或90天以上",
+        "notes": "可申請過境、短期或長期停留簽證，需備文件多樣。簽證費用隨入境目的而異，約50至118歐元。網址：https://www.visaburkina.bf/"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Cameroon",
+        "name_zh": "喀麥隆",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Chad",
+        "name_zh": "查德",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Djibouti",
+        "name_zh": "吉布地",
+        "stay_days": "最長90天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Egypt",
+        "name_zh": "埃及",
+        "stay_days": "30天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Equatorial Guinea",
+        "name_zh": "赤道幾內亞",
+        "stay_days": "單次入境簽證至多90天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Gabon",
+        "name_zh": "加彭",
+        "stay_days": "依申請天數而異",
+        "notes": "國人持憑6個月以上效期之中華民國護照及彩色照片(3.5*4.5公分)，申辦時間至少72小時。30天單次入境約85歐元(含15歐元手續費)。網址：https://evisa.dgdi.ga/#/"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Guinea",
+        "name_zh": "幾內亞",
+        "stay_days": "依簽證種類而定",
+        "notes": "需線上申請，抵達機場後需出示e-visa、實體護照、返程機票等文件。網址：https://www.paf.gov.gn/visa"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Cote d’Ivoire",
+        "name_zh": "象牙海岸",
+        "stay_days": "效期90天之停留簽證",
+        "notes": "需於行前上網登記、上傳基本資料及繳費(規費73歐元)，收到核可條碼後持憑於阿必尚國際機場申辦。網址：http://www.snedai.ci/e-visa"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Kenya (eTA)",
+        "name_zh": "肯亞 (eTA)",
+        "stay_days": "最多90日",
+        "notes": "肯亞自2024年起實施免簽證政策，向全球旅客開放申請電子旅行准證(eTA)。eTA均為單次入境，需於啟程前至少3日上網登錄申請。網址：http://www.etakenya.go.ke"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Lesotho",
+        "name_zh": "賴索托",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Malawi",
+        "name_zh": "馬拉威",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Mauritania",
+        "name_zh": "茅利塔尼亞",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Mozambique",
+        "name_zh": "莫三比克",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Namibia",
+        "name_zh": "納米比亞",
+        "stay_days": "最長3個月(90天)",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Rwanda",
+        "name_zh": "盧安達",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Sao Tome and Principe",
+        "name_zh": "聖多美普林西比",
+        "stay_days": "相關資訊請參閱聖多美普林西比政府官網",
+        "notes": "網址：http://www.smf.st/"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Togo",
+        "name_zh": "多哥",
+        "stay_days": "依申請天數而異",
+        "notes": "須上網申請e-visa，需備文件多樣。15天單次入境約39歐元。網址：https://voyage.gouv.tg/"
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Ethiopia",
+        "name_zh": "衣索比亞",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Uganda",
+        "name_zh": "烏干達",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "非洲地區",
+        "name_en": "Zimbabwe",
+        "name_zh": "辛巴威",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Antigua and Barbuda",
+        "name_zh": "安地卡及巴布達",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Argentine",
+        "name_zh": "阿根廷",
+        "stay_days": "相關資訊請參閱「簽證及入境須知」",
+        "notes": ""
+      },
+      {
+        "region": "美洲地區",
+        "name_en": "Cuba",
+        "name_zh": "古巴",
+        "stay_days": "依電子簽證種類而定",
+        "notes": "自2025年7月1日起全面實施電子簽證(eVisa-Cuba)入境措施。網址：https://evisacuba.cu/"
+      },
+      {
+        "region": "歐洲地區",
+        "name_en": "Ukraine",
+        "name_zh": "烏克蘭",
+        "stay_days": "至多30天",
+        "notes": "相關資訊請參閱「簽證及入境須知」"
+      }
+    ]
   }
-]
+}

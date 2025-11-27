@@ -1,94 +1,46 @@
-// app.js - Express API for Zeabur
-// 使用方法：node app.js
-
-const express = require("express");
-const cors = require("cors");
-const fs = require("fs");
-const path = require("path");
-
+const express = require('express');
 const app = express();
+const port = 3000;
 
-// 🔥 重要：CORS 設定（完全允許）🔥
-// 這一段可以確保從 GitHub Pages、任何網域都能 fetch API
-app.use(cors({
-  origin: "*",
-  methods: ["GET", "POST", "OPTIONS"],
-  allowedHeaders: ["Content-Type"]
-}));
+// 1. 載入新的 visa.json 檔案 (在新結構下)
+const fullVisaData = require('./visa.json');
 
-// Express 預設 JSON parser（雖然你沒有 POST，但之後可能會用到）
-app.use(express.json());
+// 提取所有國家/地區的扁平化列表 (在應用程式啟動時只執行一次)
+const allVisas = [
+    ...fullVisaData.data.visa_free,
+    ...fullVisaData.data.visa_on_arrival,
+    ...fullVisaData.data.e_visa
+];
 
-// 檔案路徑
-const DATA_DIR = __dirname;
-const COUNTRIES_FILE = path.join(DATA_DIR, "countries.json");
-const VISA_FILE = path.join(DATA_DIR, "visa.json");
+// 2. 處理簽證資訊的 API 端點
+// 範例 URL: /api/visas?region=亞太地區
+app.get('/api/visas', (req, res) => {
+    // 從查詢參數中取得 region (洲別)
+    const filterRegion = req.query.region;
+    
+    let filteredVisas = allVisas;
 
-// 讀 JSON 工具
-function readJSON(filePath) {
-  try {
-    const raw = fs.readFileSync(filePath, "utf8");
-    return JSON.parse(raw);
-  } catch (e) {
-    console.error("讀取 JSON 失敗：", filePath, e);
-    return null;
-  }
-}
-
-// ✔ GET /api/countries
-app.get("/api/countries", (req, res) => {
-  const list = readJSON(COUNTRIES_FILE);
-  if (!list) return res.status(500).json({ error: "cannot read countries" });
-  res.json(list);
-});
-
-// ✔ GET /api/visa/:country
-app.get("/api/visa/:country", (req, res) => {
-  const q = req.params.country.toLowerCase();
-  const visaList = readJSON(VISA_FILE) || [];
-  const countries = readJSON(COUNTRIES_FILE) || [];
-
-  let found = visaList.find(v => (v.code || "").toLowerCase() === q);
-
-  if (!found) {
-    found = visaList.find(v => (v.name || "").toLowerCase() === q);
-  }
-
-  if (!found) {
-    const c = countries.find(c =>
-      (c.name_en || "").toLowerCase() === q ||
-      (c.name_zh || "").toLowerCase() === q ||
-      (c.code || "").toLowerCase() === q
-    );
-
-    if (c) {
-      found = {
-        code: c.code,
-        name: c.name_en || c.name_zh || c.code,
-        visa_requirement: "unknown (請以官方為準)",
-        stay_days: "—",
-        process: "請至官方網站查詢或聯絡當地使領館。",
-        documents: "請依官方要求準備。",
-        fee: "—",
-        official_link: ""
-      };
+    if (filterRegion) {
+        // 如果有 region 參數，則進行篩選
+        filteredVisas = allVisas.filter(country => 
+            country.region === filterRegion
+        );
     }
-  }
-
-  if (!found) {
-    return res.status(404).json({ error: "country not found" });
-  }
-
-  res.json(found);
+    
+    // 3. 回傳篩選後的結果（如果沒有參數，則回傳全部）
+    res.json(filteredVisas);
 });
 
-// ✔ 測試路由（你可保留或刪掉）
-app.get("/", (req, res) => {
-  res.send("Backend is running!");
-});
-
-// 啟動服務
-const port = process.env.PORT || 3000;
+// 啟動伺服器
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+    console.log(`Server running at http://localhost:${port}`);
+});
+// ... (延續上面的程式碼) ...
+
+// 提取所有不重複的洲別清單
+const availableRegions = [...new Set(allVisas.map(country => country.region))];
+
+app.get('/api/regions', (req, res) => {
+    // 範例回傳: ["亞太地區", "亞西地區", "美洲地區", "歐洲地區 (申根區)", ...]
+    res.json(availableRegions);
 });
