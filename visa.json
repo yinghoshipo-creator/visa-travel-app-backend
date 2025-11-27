@@ -1,0 +1,52 @@
+[
+  {
+    "code":"JP",
+    "name":"Japan",
+    "visa_requirement":"visa-free",
+    "stay_days":"90 days",
+    "process":"憑護照入境（90天內免簽）",
+    "documents":"護照（有效期至少六個月）",
+    "fee":"0",
+    "official_link":"https://www.mofa.go.jp"
+  },
+  {
+    "code":"TW",
+    "name":"Taiwan",
+    "visa_requirement":"visa-free",
+    "stay_days":"90 days",
+    "process":"憑護照或相關入境許可",
+    "documents":"護照",
+    "fee":"0",
+    "official_link":"https://www.boca.gov.tw"
+  },
+  {
+    "code":"US",
+    "name":"United States",
+    "visa_requirement":"visa required (ESTA for some)",
+    "stay_days":"Varies; ESTA: 90 days",
+    "process":"線上填寫申請或前往領事館申辦簽證",
+    "documents":"護照、照片、財力證明視情況",
+    "fee":"ESTA: $21（示範）",
+    "official_link":"https://travel.state.gov"
+  },
+  {
+    "code":"CN",
+    "name":"China",
+    "visa_requirement":"visa required",
+    "stay_days":"Varies",
+    "process":"向中國大使館/領事館申辦簽證",
+    "documents":"護照、照片、簽證表格、邀請函視情況",
+    "fee":"依類別而定",
+    "official_link":"http://cs.mfa.gov.cn"
+  },
+  {
+    "code":"GB",
+    "name":"United Kingdom",
+    "visa_requirement":"visa-free (部分國家) / eVisa",
+    "stay_days":"180 days depending",
+    "process":"線上或使館申請",
+    "documents":"護照",
+    "fee":"varies",
+    "official_link":"https://www.gov.uk/check-uk-visa"
+  }
+]

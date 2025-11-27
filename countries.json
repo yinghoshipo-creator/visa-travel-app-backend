@@ -1,0 +1,12 @@
+[
+  {"code":"JP","name_en":"Japan","name_zh":"日本"},
+  {"code":"TW","name_en":"Taiwan","name_zh":"台灣"},
+  {"code":"US","name_en":"United States","name_zh":"美國"},
+  {"code":"CN","name_en":"China","name_zh":"中國"},
+  {"code":"GB","name_en":"United Kingdom","name_zh":"英國"},
+  {"code":"DE","name_en":"Germany","name_zh":"德國"},
+  {"code":"FR","name_en":"France","name_zh":"法國"},
+  {"code":"IN","name_en":"India","name_zh":"印度"},
+  {"code":"AU","name_en":"Australia","name_zh":"澳洲"},
+  {"code":"BR","name_en":"Brazil","name_zh":"巴西"}
+]
