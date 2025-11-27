@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 5001;
+const port = process.env.PORT || 5001;
 // 1. 引入 cors
 const cors = require('cors'); 
 
