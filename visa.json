@@ -1,3 +1,4 @@
+  [
   {
     "countryNameZh": "汶萊",
     "countryNameEn": "Brunei",
@@ -10,7 +11,7 @@
     "fee": "免收",
     "officialLink": "https://www.boca.gov.tw/sp-foof-countrylp-03-1.html",
     "notes": "N/A",
-    "isVisited": false
+    "isVisited": false 
   },
   {
     "countryNameZh": "庫克群島",
@@ -1090,9 +1091,6 @@
     "notes": "N/A",
     "isVisited": false
   },
-  // ===================================
-  // 二、落地簽證 (Visa-on-Arrival)
-  // ===================================
   {
     "countryNameZh": "孟加拉",
     "countryNameEn": "Bangladesh",
@@ -1541,9 +1539,6 @@
     "notes": "方能以落地簽方式入境，否則可能遭航空公司拒載",
     "isVisited": false
   },
-  // ===================================
-  // 三、電子簽證 (E-Visa / ETA)
-  // ===================================
   {
     "countryNameZh": "澳大利亞",
     "countryNameEn": "Australia",
